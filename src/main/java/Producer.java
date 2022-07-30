@@ -20,7 +20,7 @@ public class Producer {
                 ProducerRecord<String, String> record = new ProducerRecord<String, String>(topic, msg);
                 kafkaProducer.send(record);
                 System.out.println("消息发送成功:" + msg);
-                Thread.sleep(5000);
+                Thread.sleep(5q000);
             }
         } finally {
             kafkaProducer.close();
